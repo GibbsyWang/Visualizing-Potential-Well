@@ -1,0 +1,59 @@
+/* 全局基础样式：定义字体、盒模型与页面根容器。 */
+:root {
+  font-family: 'Source Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  color: #333;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* 基础页面尺寸：保证应用始终至少占满一个视口。 */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 标题与根节点尺寸：为各个页面提供一致的初始排版基线。 */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* 亮色模式下仅保留必要的颜色覆盖。 */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}

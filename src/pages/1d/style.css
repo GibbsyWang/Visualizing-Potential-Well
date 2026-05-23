@@ -1,0 +1,167 @@
+/* Sidebar layout */
+.sidebar {
+  padding: clamp(0.875rem, 2vw, 1rem);
+}
+
+/* Formula panel */
+.formulas {
+  margin-bottom: 1.5rem;
+}
+
+.formulas-title {
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  font-weight: 700;
+}
+
+.formulas-item {
+  font-size: clamp(1rem, 1.25vw, 1.2rem);
+  text-align: center;
+}
+
+.formulas-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Parameter controls */
+.parameters {
+  margin-bottom: 1.5rem;
+}
+
+.parameters-title {
+  margin-bottom: 0.8rem;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  font-weight: 700;
+}
+
+.parameter-item {
+  margin-bottom: clamp(1.25rem, 3vw, 2rem);
+}
+
+.parameter-item--compact {
+  margin-top: -0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.parameter-item-label {
+  display: flex;
+  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+  font-size: clamp(0.95rem, 1.1vw, 1rem);
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+.parameter-item-value {
+  color: #be3561;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+}
+
+.mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.mode-toggle-label {
+  color: #777;
+  font-size: clamp(0.88rem, 1vw, 0.95rem);
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.mode-toggle-label--active {
+  color: #be3561;
+}
+
+.parameter-item :deep(.ant-slider-disabled .ant-slider-track) {
+  background-color: #c5c5c5 !important;
+}
+
+.parameter-item :deep(.ant-slider-disabled .ant-slider-handle::after) {
+  background-color: #b6b6b6 !important;
+  box-shadow: none !important;
+}
+
+/* Actions */
+.operator-item {
+  margin-bottom: 1rem;
+}
+
+.operator-item :deep(.button) {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Plot layout */
+.plot-container {
+  flex: 1;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  box-sizing: border-box;
+  width: min(100%, 1240px);
+  min-width: 540px;
+  min-height: 540px;
+  margin: 0 auto;
+}
+
+.plot-container-title {
+  margin-bottom: clamp(1rem, 3vw, 2rem);
+  padding-left: 0;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.15;
+}
+
+.plot-mark {
+  color: rgb(189, 64, 67);
+}
+
+/* Performance panel */
+.performance {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+}
+
+.performance-metric {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: clamp(0.9rem, 1vw, 0.95rem);
+  font-weight: 700;
+}
+
+.performance-value {
+  color: #be3561;
+  font-weight: 600;
+}
+
+.plot-stage {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  max-height: calc(100vh - 10rem);
+}
+
+@media (max-width: 1080px) {
+  .plot-container-title {
+    padding-left: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    padding-top: 3.5rem;
+  }
+
+  .plot-container {
+    padding: 0.875rem;
+  }
+
+  .plot-stage {
+    aspect-ratio: 4 / 3;
+    max-height: calc(100vh - 8rem);
+  }
+}
