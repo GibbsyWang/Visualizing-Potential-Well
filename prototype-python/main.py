@@ -20,7 +20,7 @@ def homepage():
     st.markdown(
     """
     <h1 style="text-align:center; font-size:2.7rem; margin-top:2.5rem; margin-bottom:2.5rem;">
-    <span style="color:red;">Visualized</span> n-Dimensional Infinite Potential Well
+    <span style="color:red;">Visualizing</span> n-Dimensional Infinite Potential Well
     </h1>
     """,
     unsafe_allow_html=True
