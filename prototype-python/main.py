@@ -2,7 +2,7 @@
 """
 Created on Sun Jun 29 11:02:12 2025
 
-@author: Lequan Wang
+@author: Lequan Wang and Haibei Li
 """
 import streamlit as st
 import numpy as np
@@ -28,7 +28,7 @@ def homepage():
     st.markdown(
     """
     <h2 style="text-align:center; font-size:1.5rem; margin-top:0rem; margin-bottom:2.5rem;">
-    <span style="color:dimgray;">By Lequan Wang </span>
+    <span style="color:dimgray;">By Lequan Wang and Haibei Li </span>
     </h2>
     """,
     unsafe_allow_html=True
