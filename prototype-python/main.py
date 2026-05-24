@@ -12,7 +12,7 @@ import plotly.graph_objects as go
 
 def homepage():
     st.set_page_config(
-       page_title="Visualized Potential Well",
+       page_title="Visualizing Potential Well",
        layout="centered",
       page_icon=":bar_chart:"
     )
@@ -212,46 +212,6 @@ def display_2d_infinite_well():
         ),
         height=800,
     )
-
-    # 波函数等高线
-    # fig_psi_contour = go.Figure(data=[
-    #     go.Contour(
-    #         z=psi,
-    #         x=x,
-    #         y=y,
-    #         colorscale='RdBu',
-    #         colorbar=dict(title='Amplitude'),
-    #         contours=dict(showlabels=True),
-    #         line_smoothing=0.85
-    #     )])
-    # fig_psi_contour.update_layout(
-    #     title={'text': 'Wavefunction Contour (Ψ)', 'x': 0.5, 'xanchor': 'center'},
-    #     title_font=dict(size=22),
-    #     xaxis_title='x',
-    #     yaxis_title='y',
-    #     margin=dict(l=10, r=10, b=20, t=40),
-    #     height=620
-    # )
-
-    # 概率密度等高线
-    # fig_psi2_contour = go.Figure(data=[
-    #     go.Contour(
-    #         z=psi2,
-    #         x=x,
-    #         y=y,
-    #         colorscale='viridis',
-    #         colorbar=dict(title='Pro. Density'),
-    #         contours=dict(showlabels=True),
-    #         line_smoothing=0.85
-    #     )])
-    # fig_psi2_contour.update_layout(
-    #     title={'text': 'Probability Density Contour (Ψ²)', 'x': 0.5, 'xanchor': 'center'},
-    #     title_font=dict(size=22),
-    #     xaxis_title='x',
-    #     yaxis_title='y',
-    #     margin=dict(l=10, r=10, b=20, t=40),
-    #     height=620
-    # )
 
     # 2*2绘图
     c1, c2 = st.columns(2)
